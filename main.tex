@@ -1,21 +1,26 @@
 \documentclass[12pt]{article}
 \usepackage{graphicx}
 \usepackage{pdfpages}
+\usepackage{multicol}
+\usepackage{blindtext}
+
+\usepackage{sectsty}
+\allsectionsfont{\raggedright}
+
+
 
 \begin{document}
-\begin{center}
-    Rajshahi University of Engineering \& Technology
-\end{center}
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=5cm]{figs/RUET.png}
-    \label{fig:ruet}
-\end{figure}
-
+\sloppy
+\include{chapters/frontpages/frontpage/frontpage}
+\include{chapters/frontpages/certificate/certificate}
+\input{chapters/frontpages/acknowledgement/acknowledgement}
+\input{chapters/frontpages/abstract/abstract}
+\newpage
 \tableofcontents
 \include{chapters/forbes_marshall/forbes_marshall}
 \includepdf[pages=-, angle=90]{chapters/org/org.pdf}
 \include{chapters/steam/steam}
+\include{chapters/distribution/distribution}
 
 % THE REFERENCE
 \bibliographystyle{IEEEtran}
