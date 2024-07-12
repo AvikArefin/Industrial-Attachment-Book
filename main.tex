@@ -1,0 +1,25 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+
+\begin{document}
+\begin{center}
+    Rajshahi University of Engineering \& Technology
+\end{center}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=5cm]{figs/RUET.png}
+    \label{fig:ruet}
+\end{figure}
+
+\tableofcontents
+\include{chapters/forbes_marshall/forbes_marshall}
+\includepdf[pages=-, angle=90]{chapters/org/org.pdf}
+\include{chapters/steam/steam}
+
+% THE REFERENCE
+\bibliographystyle{IEEEtran}
+\bibliography{References.bib}
+
+
+\end{document}
