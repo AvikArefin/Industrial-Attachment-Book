@@ -7,23 +7,47 @@
 % \allsectionsfont{\raggedright}
 
 
-
 \begin{document}
 \sloppy
 \include{chapters/frontpages/frontpage/frontpage}
 \include{chapters/frontpages/certificate/certificate}
 \include{chapters/frontpages/acknowledgement/acknowledgement}
 \include{chapters/frontpages/abstract/abstract}
+
 \newpage
+
 \tableofcontents
+\listoffigures
+
 \include{chapters/forbes_marshall/forbes_marshall}
+\refstepcounter{figure}\addcontentsline{lof}{figure}{\protect\numberline{\thefigure}Organogram of Forbes Marshall}
 \includepdf[pages=-, angle=90]{chapters/org/org.pdf}
 \include{chapters/steam/steam}
-\include{chapters/distribution/distribution}
+\include{chapters/gen_&_dist/gen_&_dist}
+\include{chapters/etp/etp}
+\include{chapters/knitting/knitting}
+\include{chapters/generator/generator}
+\include{chapters/boilers/boilers}
+\include{chapters/traps_control_valves/traps_control_valves}
+
+% GROUP PHOTOS
+\section{Group Photos}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figs/group_pic_fm.jpg}
+    \caption{Group Photo at Forbes Marshall}
+    \label{fig:group_pic_fm}
+\end{figure}
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figs/group_pic_ral.jpg}
+    \caption{Group Photo at Renaissance Apparel Ltd}
+    \label{fig:group_pic_ral}
+\end{figure}
+
 
 % THE REFERENCE
 \bibliographystyle{IEEEtran}
 \bibliography{References.bib}
-
-
 \end{document}
