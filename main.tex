@@ -1,4 +1,6 @@
 \documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{tgtermes}
 \usepackage{graphicx}
 \usepackage{pdfpages}
 \usepackage{multicol}
@@ -35,6 +37,9 @@
 \include{chapters/flowmeter/flowmeter}
 \include{chapters/etp/etp}
 \include{chapters/control_instrumentation/control_instrumentation}
+\include{chapters/mechatronics/mechatronics}
+\include{chapters/discussion/discussion}
+
 
 
 \begin{appendices}
@@ -59,7 +64,7 @@
     \includepdf[pages=-, angle=90]{chapters/org/org.pdf}
 
 
-    \section{Appendix 2: Group Photos}
+    \section{Appendix 2: Group Photos \& Environment}
     \begin{figure}[h!]
         \centering
         \includegraphics[width=0.8\linewidth]{figs/group_pic_fm.jpg}
@@ -69,14 +74,35 @@
     
     \begin{figure}[h!]
         \centering
+        \includegraphics[width=0.8\linewidth]{figs/RAL_initial_meeting.jpg}
+        \caption{RAL Group Intitial Meeting}
+        \label{fig:RAL Group Intitial Meeting}
+    \end{figure}
+
+    \begin{figure}[h!]
+        \centering
         \includegraphics[width=0.8\linewidth]{figs/group_pic_ral.jpg}
         \caption{Group Photo at Renaissance Apparel Ltd}
         \label{fig:group_pic_ral}
     \end{figure}
 
-\end{appendices}
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.8\linewidth]{figs/environment.jpg}
+        \caption{Environment at Renaissance Apparel Ltd}
+        \label{fig:environment}
+    \end{figure}
 
+    \begin{figure}[h!]
+        \centering
+        \includegraphics[width=0.8\linewidth]{figs/fabric_unit.jpg}
+        \caption{Fabric Unit at Renaissance Apparel Ltd}
+        \label{fig:Fabric Unit}
+    \end{figure}
+
+\end{appendices}
 % THE BIBLIOGRAPHY
+\clearpage
 \bibliographystyle{IEEEtran}
 \bibliography{References.bib}
 \end{document}

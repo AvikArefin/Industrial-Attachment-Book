@@ -216,7 +216,14 @@ Adjustable on/off level control
 \subsubsection{Description}
 
 An adjustable on/off level control system consists of a controller and a
-capacitance probe (see Figure 3.32), and provides:
+capacitance probe (see Figure \ref{fig:On/offlevelcontroller}), and provides:
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=0.8\linewidth]{figs/control_instrumentation/image5.png}
+  \caption{On/off level controller}
+  \label{fig:On/offlevelcontroller}
+\end{figure}
 
 \begin{enumerate}
 \item
@@ -251,12 +258,6 @@ and the built-in electronics can be modified to stop the pump (or
 valve) from cycling rapidly on and off.
 \end{enumerate}
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=6.75312in,height=3in]{figs/control_instrumentation/image5.png}
-  \caption{On/off level controller}
-  \label{fig:On/off level controller}
-\end{figure}
 
 
 \subsection{Modulating level control}
@@ -265,8 +266,7 @@ valve) from cycling rapidly on and off.
 
 A capacitance probe and suitable controller, which generates a
 modulating output signal, usually 4--20 mA, make up a modulating level
-control system. See Figure 8.3.5. Several devices may be impacted by
-this output signal, including:
+control system. Several devices may be impacted by this output signal, including:
 
 \begin{enumerate}
 \item
@@ -284,7 +284,7 @@ this output signal, including:
   device---rather, they only send out a signal that other devices react
   to.
 \item
-  Steady regulation of the tank\textquotesingle s level.
+Steady regulation of the tank\textquotesingle s level.
 \end{enumerate}
 
 \subsubsection{Disadvantage:}
@@ -303,12 +303,6 @@ this output signal, including:
 \end{enumerate}
 
 
-\begin{figure}[h!]
-  \centering
-  \includegraphics[width=6in,height=2.65278in]{figs/control_instrumentation/image6.png}
-  \caption{Modulating level controller}
-  \label{fig:Modulating level controller}
-\end{figure}
 
 
 
@@ -317,7 +311,7 @@ this output signal, including:
 Desuperheating is the process of lowering the superheated temperature of
 steam or returning it to its saturated condition. A direct contact type
 pipeline desuperheater and a pressure lowering station are arranged in
-the system shown in Figure 3.34.
+the system shown in Figure \ref{fig:Desuperheating unit}.
 
 
 
@@ -332,7 +326,7 @@ greater than the applicable saturation temperature, often between 5 and
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.7\linewidth]{figs/control_instrumentation/image7.png}
+  \includegraphics[width=0.8\linewidth]{figs/control_instrumentation/image7.png}
   \caption{Desuperheating unit.}
   \label{fig:Desuperheating unit}
 \end{figure}
@@ -348,9 +342,6 @@ If the downstream pressure fluctuates, as it sometimes does with certain
 industrial operations, a modification in the water/steam flow ratio will
 also be necessary.
 
-The steam pressure control valve in the system shown in Figure 3.34 is
-operated by setting the pressure controller to the necessary downstream
-pressure.
 
 The pressure transmitter\textquotesingle s 4--20 mA signal is sent to
 the saturation temperature computer and pressure controller. The
@@ -366,7 +357,7 @@ This will ensure that, regardless of load or downstream pressure, the
 proper ratio of water to steam is maintained.
 
 
-\subsection{PID Controller:}
+\subsection{PID Controller:\cite{pid}}
 
 One popular kind of feedback control system in industrial control
 systems is the PID controller. Proportional-Integral-Derivative, or PID,
@@ -394,7 +385,7 @@ down the system response.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.7\linewidth]{figs/control_instrumentation/image8.png}
+  \includegraphics[width=0.8\linewidth]{figs/control_instrumentation/image8.png}
   \caption{Work flow diagram of PID controller}
   \label{fig:Work flow diagram of PID controller}
 \end{figure}
@@ -423,13 +414,6 @@ processes that need to be highly dependable and simple to program.
 assembly lines, amusement rides, light fixtures, and more.
 
 
-\begin{figure}[h!]
-  \centering 
-  \includegraphics[width=1.97887in,height=2.18448in]{figs/control_instrumentation/image9.png}
-  \includegraphics[width=3.96887in,height=2.08876in]{figs/control_instrumentation/image10.png}
-  \caption{SCADA system for water level control}
-  \label{fig:SCADA system for water level control}
-\end{figure}
 
 
 \subsection{Supervisory Control and Data Acquisition (SCADA)}
@@ -437,6 +421,13 @@ assembly lines, amusement rides, light fixtures, and more.
 \textbf{Definition:} SCADA is a control system architecture that
 provides high-level process supervisory management via the use of
 computers, networked data transmission, and graphical user interfaces.
+
+\begin{figure}[h!]
+  \centering 
+  \includegraphics[width=0.8\linewidth]{figs/control_instrumentation/image10.png}
+  \caption{SCADA system for water level control}
+  \label{fig:SCADA system for water level control}
+\end{figure}
 
 \textbf{Key Features:}
 
